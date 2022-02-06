@@ -1,0 +1,29 @@
+﻿@page "/"
+@inject IJSRuntime JsRunTime
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<pre>
+<code>import { highlight } from './highlight_lib';
+
+export function Highlight() {
+    return highlight();
+}</code></pre>
+
+@code
+{
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JsRunTime.InvokeAsync<string>("jslib.Highlight");
+        }
+        await base.OnAfterRenderAsync(firstRender);
+    }
+}
