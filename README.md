@@ -1,10 +1,14 @@
 Using NPM packages in a Blazor Wasm app
-=====================================
+=======================================
 
-[Github Source](https://github.com/Timmoth/blazor-npm-guide)
-------------------------------------------------------------
+Find the demo project on [Github](https://github.com/Timmoth/blazor-npm-guide)  
+  
+Prerequisites:
+--------------------------------------------------------------------------------------------------
 
-Ensure you've [installed nodejs](https://nodejs.org/en/download/)
+*   [Nodejs](https://nodejs.org/en/download/)
+*   [Visual Studio 2022](https://visualstudio.microsoft.com/)
+*   ASP.NET and web development workload
 
 Setup your solution and blazor wasm project
 
