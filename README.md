@@ -76,7 +76,7 @@ Add a script to build webpack in package.json
         "webpack-cli": "^4.9.2"
       },
       "devDependencies": {
-        "@@babel/core": "^7.17.0",
+        "@babel/core": "^7.17.0",
         "babel-loader": "^8.2.3"
       }
     }
@@ -84,7 +84,7 @@ Add a script to build webpack in package.json
 
 Install babel
 
-    npm install babel-loader @@babel/core --save-dev
+    npm install babel-loader @babel/core --save-dev
     
 
 Install your npm package, in this instance we're going to install highlight.js
